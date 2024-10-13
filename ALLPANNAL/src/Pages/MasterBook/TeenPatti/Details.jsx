@@ -1,0 +1,115 @@
+import { Lock } from "lucide-react";
+import { Link } from "react-router-dom";
+
+function TeenPattiDetails() {
+  return (
+    <>
+      <div className="body-wrapper">
+        <div className="container-fluid">
+          {/* page title */}
+          <div className="card bg-info-subtle shadow-none position-relative overflow-hidden mb-md-4 mb-3">
+            <div className="card-body d-flex align-items-md-center justify-content-between p-md-4 p-3 flex-md-row flex-column">
+              <h5 className="fw-bold mb-0">20 20 Live TeenPatti</h5>
+              <h6 className="mb-0 mt-md-0 mt-2 fw-bold">
+                <small>Round ID: 241006114835 </small>
+              </h6>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-8">
+              <iframe
+                src="https://player.7777exch.com/?id=AndarBaharA"
+                width={"100%"}
+                height={"330px"}
+                className="border rounded overflow-hidden iframe-data"
+                frameBorder="0"
+              ></iframe>
+              <div className="card-content mt-2">
+                <div className="table-responsive">
+                  <table className="table coupon-table table table-bordered ">
+                    <thead>
+                      <tr>
+                        <th className="w-33" />
+                        <th className="back w-33">BACK</th>
+                        <th className="back w-33"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="bet-info">
+                        <td className="w-33">
+                          <b>Player A</b>
+                        </td>
+                        <td className="back w-33 teen-section">
+                          <button className="back">
+                            <span className="odd">12.20</span>
+                            <span className="text-red">0.00</span>
+                          </button>
+                        </td>
+                        <td className="back w-33 teen-section">
+                          <button className="back">
+                            <span className="odd">13.70</span>
+                            <span className="text-green">0.00</span>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr className="bet-info suspended">
+                        <td className="w-33">
+                          <b>Player B</b>
+                        </td>
+                        <td className="back w-33 teen-section">
+                          <button className="back">
+                            <span className="odd">12.20</span>
+                            <span className="text-red">0.00</span>
+                          </button>
+                        </td>
+                        <td className="back w-33 teen-section">
+                          <button className="back">
+                            <span className="odd">13.70</span>
+                            <span className="text-green">0.00</span>
+                          </button>
+                        </td>
+                        <Lock size={36} color="red" />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 ps-md-0">
+              <div className="card">
+                <div className="card-body pt-2 pb-3 px-0">
+                  <div className="table-responsive">
+                    <table className="table align-middle text-nowrap mb-0">
+                      <thead>
+                        <tr className="text-muted fw-semibold">
+                          <th scope="col">Assigned</th>
+                          <th scope="col">Round ID</th>
+                          <th scope="col">User Name</th>
+                          <th scope="col">Nation</th>
+                          <th scope="col">Rate</th>
+                          <th scope="col">Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody className="border-top">
+                        <tr className="text-muted fw-semibold">
+                          <td>Assigned</td>
+                          <td>Round ID</td>
+                          <td>User Name</td>
+                          <td>Nation</td>
+                          <td>Rate</td>
+                          <td>Amount</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default TeenPattiDetails;
